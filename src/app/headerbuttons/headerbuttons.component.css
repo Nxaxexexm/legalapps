@@ -1,0 +1,9 @@
+.buttons {
+    display: table-cell;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #F6AE2D;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    padding: 20px 22px;
+  }

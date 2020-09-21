@@ -1,0 +1,10 @@
+.button {
+    display: table-cell;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #F6AE2D;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    padding: 15px 40px;
+    color: white;
+  }

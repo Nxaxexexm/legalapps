@@ -1,0 +1,67 @@
+<!-- <p>caselaws works!</p>
+<mat-slider min="1" max="100" step="1" value="1"></mat-slider> -->
+
+<h1>What is Case Law</h1>
+<p>Statutory laws are those created by legislative bodies, such as Congress at both the federal and state levels. While this type of law strives to shape our society, providing rules and guidelines, it would be impossible for any legislative body to anticipate all situations and legal issues. The court system is then tasked with interpreting the law when it is unclear how it applies to any given situation, often rendering judgments based on the intent of lawmakers and the circumstances of the case at hand. Such decisions become a guide for future similar cases.
+
+    In order to preserve a uniform enforcement of the laws, the legal system adheres to the doctrine of stare decisis, which is Latin for “stand by decided matters.”  This means that a court will be bound to rule in accordance with a previously made ruling on the same type of case. Precedent, or case law, is binding on courts of the same level or lower, and applies only if there is no legislative statute created, or higher court ruling, that overrules it.</p>
+
+<h2>
+    <mat-accordion>
+        <mat-expansion-panel hideToggle>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+                Example of Case Law Application
+            </mat-panel-title>
+            <mat-panel-description>
+              This is a summary of the content
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <p>
+            Stacy, a tenant in a duplex owned by Martin, filed a civil lawsuit against her landlord, claiming he had not given her enough notice before raising her rent, citing a new state law that requires a minimum of 90 days’ notice. Martin argues that the new law applies only to landlords of large multi-tenant properties. When the state court hearing the case reviews the law, he finds that, while it mentions large multi-tenant properties in some context, it is actually quite vague about whether the 90-day provision applies to all landlords. The judge, based on the specific circumstances of Stacy’s case, decides that all landlords are held to the 90-day notice requirement, and rules in Stacy’s favor.
+
+            A year later, Frank and Adel have a similar problem. When they sue their landlord, the court must use the previous court’s decision in applying the law. This example of case law refers to two cases heard in the state court, at the same level. The ruling of the first court created case law that must be followed by other courts until or unless either new law is created, or a higher court rules differently.
+
+          </p>
+        </mat-expansion-panel>
+        <mat-expansion-panel (opened)="panelOpenState = true"
+                             (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+                Case Law by Jurisdiction
+            </mat-panel-title>
+            <mat-panel-description>
+              Currently I am {{panelOpenState ? 'open' : 'closed'}}
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <p>
+            Case law is specific to the jurisdiction in which it was rendered. For instance, a ruling in a California appellate court would not usually be used in deciding a case in Oklahoma. While there is no prohibition against referring to case law from a state other than the state in which the case is being heard, it holds little sway. Still, if there is no precedent in the home state, relevant case law from another state may be considered by the court.
+
+            Rulings made by federal appellate courts, and the U.S. Supreme Court, however, are binding on state courts. Such rulings become “binding precedent,” which must be adhered to by lower courts in future similar cases. Rulings by courts of “lateral jurisdiction” are not binding, but may be used as persuasive authority, which is to give substance to the party’s argument, or to guide the present court.
+
+          </p>
+        </mat-expansion-panel>
+
+
+        <mat-expansion-panel (opened)="panelOpenState = true"
+        (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+        <mat-panel-title>
+          Case Law Search
+        </mat-panel-title>
+        <mat-panel-description>
+        Currently I am {{panelOpenState ? 'open' : 'closed'}}
+        </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p>Just a few years ago, searching for case precedent was a difficult and time consuming task, requiring people to search through print copies of case law, or to pay for access to commercial online databases. Today, the internet has opened up a host of case law search possibilities, and many sources offer free access to case law. Doing a case law search may be as easy as entering specific keywords or citation into a search engine. There are, however, certain websites that facilitate case law searches, including:</p>
+        <p> Google Scholar – a vast database of state and federal case law, which is searchable by keyword, phrase, or citations. Google Scholar also allows searchers to specify which level of court cases to search, from federal, to specific states.
+          Justia – a comprehensive resource for federal and state statutory laws, as well as case law at both the federal and state levels.
+          Public Library of Law – offers access to cases from the U.S. Supreme court since 1754, the U.S. Circuit Courts of Appeal since 1951, and from each state since 1997. In addition to allowing users to search by keyword, court, and case, the website provides tutorials on “Finding a Case,” and “Searching Statutes.”
+        </p>
+        </mat-expansion-panel>
+
+
+
+      </mat-accordion>
+
+</h2>    

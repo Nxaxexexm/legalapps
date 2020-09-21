@@ -1,0 +1,74 @@
+<mat-accordion>
+  <mat-expansion-panel hideToggle>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Here you can find all the legislation information.
+      </mat-panel-title>
+      <mat-panel-description>
+        This is a summary of the legislation.
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <p>Legislation, the preparing and enacting of laws by local, state, or national legislatures.</p>
+    <br>
+    <p>
+      Legislation involves not only action by a legislative body, but also participation by the executive. Concurrence by the executive is required to make legislation effective except where the exercise of veto power is overridden by a sufficient majority of each house of the legislature. Moreover, the role of the executive involves far more than mere acquiescence or dissent. As the principal officer of state and as a political leader, the executive participates extensively in the formulation of governmental policy and often in the actual preparation of legislation.
+    </p>
+  </mat-expansion-panel>
+  <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Personal Injury
+      </mat-panel-title>
+      <mat-panel-description>
+        Currently I am {{panelOpenState ? 'open' : 'closed'}}
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <p>Personal injury lawsuits are filed against the person or entity that caused the harm through negligence, gross negligence, reckless conduct, or intentional misconduct, and in some cases on the basis of strict liability.</p>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel (opened)="panelOpenState = true"
+  (closed)="panelOpenState = false">
+<mat-expansion-panel-header>
+<mat-panel-title>
+Family Law
+</mat-panel-title>
+<mat-panel-description>
+Currently I am {{panelOpenState ? 'open' : 'closed'}}
+</mat-panel-description>
+</mat-expansion-panel-header>
+<p>Family law is a legal practice area that focuses on issues involving family relationships, such as adoption, divorce, and child custody, among others.</p>
+</mat-expansion-panel>
+
+<mat-expansion-panel (opened)="panelOpenState = true"
+(closed)="panelOpenState = false">
+<mat-expansion-panel-header>
+<mat-panel-title>
+Criminal defense
+</mat-panel-title>
+<mat-panel-description>
+Currently I am {{panelOpenState ? 'open' : 'closed'}}
+</mat-panel-description>
+</mat-expansion-panel-header>
+<p>Criminal defense law consists of the legal protections afforded to people who have been accused of committing a crime. Law enforcement agencies and government prosecutors have extensive resources at their disposal.</p>
+</mat-expansion-panel>
+
+
+
+<mat-expansion-panel (opened)="panelOpenState = true"
+(closed)="panelOpenState = false">
+<mat-expansion-panel-header>
+<mat-panel-title>
+Protection Law
+</mat-panel-title>
+<mat-panel-description>
+Currently I am {{panelOpenState ? 'open' : 'closed'}}
+</mat-panel-description>
+</mat-expansion-panel-header>
+<p>Protections are laws and other official measures intended to protect people's rights and freedoms.</p>
+</mat-expansion-panel>
+
+
+
+
+</mat-accordion>
